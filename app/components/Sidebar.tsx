@@ -6,7 +6,7 @@ import {HiHome,HiMiniChatBubbleOvalLeftEllipsis , HiMiniUserGroup ,  HiMiniIdent
 
 const Sidebar = () => {
   return (
-    <div className="p-4 max-w-72 border border-green-300">
+    <div className="p-4 max-w-72 border-r-2">
       <div className="flex justify-around items-center gap-2 mx-auto">
         <Image src={periskope} alt="periskope" sizes='4vw'/>
         <div >
