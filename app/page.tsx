@@ -1,13 +1,11 @@
 import Sidebar from "./components/Sidebar";
-import Table from "./components/Table";
-import SidePanel from "./components/SidePanel";
+import GroupsPage from "./components/GroupsPage";
 
 export default function Home() {
   return (
-    <div className="h-screen flex justify-between w-full">
+    <div className="h-screen flex justify-between w-full overflow-x-scroll">
       <Sidebar />
-      <Table />
-      <SidePanel />
+      <GroupsPage />
     </div >
   );
 }
