@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <button><HiChevronUpDown className='size-8' /></button>
             </div>
             <div className="mt-8">
-                <ul className='space-y-2 text-gray-700 text-xs'>
+                <ul className='space-y-2 text-gray-700 text-sm'>
                     <li className='hover:text-green-800 hover:bg-gray-100 p-2 rounded-md'>
                         <button className="flex items-center gap-4">
                             <HiHome size={14} />
