@@ -49,7 +49,7 @@ const Sidebar = () => {
                                 <span>{title}</span>
                             </button>
                             {badge && (
-                                <span className="bg-green-400 text-white rounded-xl text-xs p-1">
+                                <span className="bg-green-500 text-white rounded-xl text-xs p-1">
                                     {badge}
                                 </span>
                             )}
