@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WhatsApp UI Assessment
 
-## Getting Started
+This project is a WhatsApp UI assessment. Follow the instructions below to set up and run the project on your local machine.
 
-First, run the development server:
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- Node.js (v14.x or later)
+- npm (v6.x or later)
+- Supabase account
+
+## Setup
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/iamsjunaid/whatsapp-ui-assessment.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd whatsapp-ui-assessment
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+## Setting Up Supabase
+
+To set up Supabase for this project, follow these steps:
+
+1. **Create a Supabase account:**
+   
+   Go to [Supabase](https://supabase.io/) and sign up for a free account.
+
+2. **Create a new project:**
+
+   Once logged in, create a new project and note down the `API URL` and `anon key`.
+
+3. **Configure environment variables:**
+
+   Create a `.env` file in the root of your project directory and add the following environment variables:
+
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+   ```
+
+   Replace `your-supabase-url` and `your-supabase-anon-key` with the values from your Supabase project.
+
+4. **Install Supabase client:**
+
+   ```bash
+   npm install @supabase/supabase-js
+   ```
+
+## Running the Project
+
+1. **Start the development server:**
+
+    ```bash
+    npm start
+    ```
+
+2. Open your browser and navigate to `http://localhost:3000` to view the project.
+
+## Building for Production
+
+To create a production build, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The production-ready files will be in the `build` directory.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+If you would like to contribute to this project, please follow these steps:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
