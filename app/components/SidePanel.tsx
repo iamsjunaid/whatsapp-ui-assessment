@@ -1,11 +1,10 @@
-import dateFormat, { masks } from "dateformat";
+import dateFormat from 'dateformat';
 
 import { HiMiniArrowPath, HiChevronUpDown } from "react-icons/hi2";
 import { PiExport } from "react-icons/pi";
 import { IoExitOutline } from "react-icons/io5";
 import { GiNetworkBars } from "react-icons/gi";
 import { SlCalender } from "react-icons/sl";
-import { BsDot } from "react-icons/bs";
 
 import { Group } from '@/utils/types';
 
@@ -22,7 +21,7 @@ const SidePanel = ({ group }: SidePanelProps) => {
   if (!group) return null;
   return (
     <div className="text-xs">
-      <div className='flex justify-between items-center p-4'>
+      <div className='flex justify-between items-start p-4'>
         <p className=" font-semibold mb-2">{group.name}</p>
         <button className="flex justify-between items-center text-gray-500">< HiMiniArrowPath />refresh</button>
       </div>
