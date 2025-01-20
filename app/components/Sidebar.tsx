@@ -11,6 +11,8 @@ import {
     HiChevronUpDown
 } from 'react-icons/hi2';
 
+import { IoLogoWhatsapp } from "react-icons/io";
+
 const menuItems = [
     { icon: HiHome, title: 'Dashboard' },
     { icon: HiMiniChatBubbleOvalLeftEllipsis, title: 'Chats', badge: '99+' },
@@ -23,16 +25,16 @@ const menuItems = [
 
 const Sidebar = () => {
     return (
-        <div className="p-4 border-r-2 w-1/4">
+        <div className="p-2 border-r-2 w-64 h-screen">
             {/* Header Section */}
             <div className="flex justify-around items-center gap-2 mx-auto text-xs">
                 <Image src={periskope} alt="periskope" className="size-8" />
                 <div>
-                    <p>Periskope</p>
+                    <p className='font-semibold'>Periskope</p>
                     <p className="text-gray-500">bharat@hashlabs.dev</p>
                 </div>
                 <button>
-                    <HiChevronUpDown className="size-8" />
+                    <HiChevronUpDown className="size-4 text-gray-500" />
                 </button>
             </div>
 
@@ -44,18 +46,26 @@ const Sidebar = () => {
                             key={index}
                             className="hover:text-green-800 hover:bg-gray-100 p-2 rounded-md flex justify-between items-center cursor-pointer"
                         >
-                            <button className="flex items-center gap-4">
-                                <Icon className='size-5' />
-                                <span>{title}</span>
+                            <button className="flex items-center gap-2">
+                                <Icon className='size-4' />
+                                <span className='text-xs font-semibold'>{title}</span>
                             </button>
                             {badge && (
-                                <span className="bg-green-500 text-white rounded-xl text-xs p-1">
+                                <span className="bg-green-500 text-white rounded-xl text-[0.50rem] px-1">
                                     {badge}
                                 </span>
                             )}
                         </li>
                     ))}
                 </ul>
+            </div>
+
+            {/* Whatsapp Section */}
+            <div className="absolute bottom-0 p-2 rounded-md flex justify-between items-center cursor-pointer">
+                <button className="flex items-center gap-2">
+                    <IoLogoWhatsapp className='size-4 text-green-700' />
+                    <span className='text-xs'>Help & Support</span>
+                </button>
             </div>
         </div>
     );
