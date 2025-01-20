@@ -17,7 +17,7 @@ const Search = () => {
       </div>
       <div className="flex justify-around items-center gap-2">
         <Button style="bg-green-700 text-white p-1">Bulk message</Button>
-        <Button style=" p-1 ">Group Actions<HiChevronUpDown/></Button>
+        <Button style=" p-1 bg-white">Group Actions<HiChevronUpDown/></Button>
       </div>
     </div>
   )

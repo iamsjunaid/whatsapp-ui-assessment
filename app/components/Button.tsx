@@ -7,7 +7,7 @@ interface ButtonProps {
 
 const Button = ({ children, style }: ButtonProps) => {
     return (
-        <button className={`flex justify-around items-center gap-1 border bg-white text-xs text-gray-500 rounded-md ${style}`}>
+        <button className={`flex justify-around items-center gap-1 border text-xs text-gray-500 rounded-md ${style}`}>
             {children}
         </button>
     )
