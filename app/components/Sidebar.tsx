@@ -25,7 +25,7 @@ const menuItems = [
 
 const Sidebar = () => {
     return (
-        <div className="p-2 border-r-2 w-64 h-screen">
+        <div className="p-2 border-r w-64 ">
             {/* Header Section */}
             <div className="flex justify-around items-center gap-2 mx-auto text-xs">
                 <Image src={periskope} alt="periskope" className="size-8" />
@@ -61,7 +61,7 @@ const Sidebar = () => {
             </div>
 
             {/* Whatsapp Section */}
-            <div className="absolute bottom-0 p-2 rounded-md flex justify-between items-center cursor-pointer">
+            <div className="absolute bottom-8 p-2 rounded-md flex justify-between items-center cursor-pointer">
                 <button className="flex items-center gap-2">
                     <IoLogoWhatsapp className='size-4 text-green-700' />
                     <span className='text-xs'>Help & Support</span>
